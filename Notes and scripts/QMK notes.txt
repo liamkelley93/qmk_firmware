@@ -1,0 +1,19 @@
+Notes for compiling and installing the firmware
+
+Compiling:
+1. Navigate to ~/Documents/QMK/pleasuretek
+2. Run "make massdrop/ctrl:minimac93"
+3. Output will be ~/Documents/QMK/pleasuretek/massdrop_ctrl_minimac93.bin
+
+Executable code
+cd ~/Documents/QMK/pleasuretek
+make massdrop/ctrl:minimac93
+cp massdrop_ctrl_minimac93.bin ~/Library/CloudStorage/Dropbox-Personal/Stuff/massdrop_ctrl_minimac93.bin
+
+Installing:
+1. Copy .bin file to Downloads folder on Hephaestus
+2. Open cmd, navigate to Downloads
+3. Open on screen keyboard
+4. Leave "mdloader_windows.exe --first --download FILE_NAME --restart" ready to run in cmd
+4. Press reset button on keyboard using paper clip
+5. Run command by pressing enter using on screen keyboard
