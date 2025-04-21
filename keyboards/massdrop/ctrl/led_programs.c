@@ -101,18 +101,27 @@ led_setup_t leds_rainbow_s[] = {
 
 //pink and cyan scrolling
 led_setup_t leds_pleasuretek_s[] = {
-    { .hs = 0,      .he = 8.33,  .rs = 255, .re = 255, .gs = 255,   .ge = 255, .bs = 255,   .be = 255,   .ef = EF_OVER | EF_SCR_R },
-    { .hs = 8.33,   .he = 16.6,  .rs = 255, .re = 255,   .gs = 255,   .ge = 20,   .bs = 255,   .be = 147,   .ef = EF_OVER | EF_SCR_R },
-    { .hs = 16.6,   .he = 24.9,  .rs = 255,   .re = 255,   .gs = 20,   .ge = 20, .bs = 147,   .be = 147,   .ef = EF_OVER | EF_SCR_R },
-    { .hs = 24.9,   .he = 33.2,  .rs = 255,   .re = 255,   .gs = 20, .ge = 255,   .bs = 147,   .be = 255,   .ef = EF_OVER | EF_SCR_R },
-    { .hs = 33.2,   .he = 41.5,  .rs = 255,   .re = 255,   .gs = 255,   .ge = 255, .bs = 255,   .be = 255, .ef = EF_OVER | EF_SCR_R },
-    { .hs = 41.5,   .he = 49.8,  .rs = 255,   .re = 255,   .gs = 255, .ge = 255,   .bs = 255, .be = 255,   .ef = EF_OVER | EF_SCR_R },
-    { .hs = 49.8,   .he = 58.1,  .rs = 255,   .re = 255,   .gs = 255,   .ge = 255,   .bs = 255,   .be = 255,   .ef = EF_OVER | EF_SCR_R },
-    { .hs = 58.1,   .he = 66.4,  .rs = 255,   .re = 255,   .gs = 255,   .ge = 255,   .bs = 255,   .be = 255, .ef = EF_OVER | EF_SCR_R },
-    { .hs = 66.4,   .he = 74.7,  .rs = 255,   .re = 255,   .gs = 255,   .ge = 255,   .bs = 255,   .be = 255,   .ef = EF_OVER | EF_SCR_R },
-    { .hs = 74.7,   .he = 83,    .rs = 255,   .re = 0, .gs = 255,   .ge = 255,   .bs = 255,   .be = 255, .ef = EF_OVER | EF_SCR_R },
-    { .hs = 83,     .he = 91.3,  .rs = 0,   .re = 0,   .gs = 255,   .ge = 255,   .bs = 255,   .be = 255,   .ef = EF_OVER | EF_SCR_R },
-    { .hs = 91.3,   .he = 100,   .rs = 0,   .re = 255, .gs = 255,   .ge = 255,   .bs = 255,   .be = 255,   .ef = EF_OVER | EF_SCR_R },
+    { .hs = 0,      .he = 8.33,  .rs = 255,  .re = 255, .gs = 255, .ge = 255, .bs = 255, .be = 255, .ef = EF_OVER | EF_SCR_R },
+    { .hs = 8.33,   .he = 16.6,  .rs = 255,  .re = 255, .gs = 255, .ge = 20,  .bs = 255, .be = 147, .ef = EF_OVER | EF_SCR_R },
+    { .hs = 16.6,   .he = 24.9,  .rs = 255,  .re = 255, .gs = 20,  .ge = 20,  .bs = 147, .be = 147, .ef = EF_OVER | EF_SCR_R },
+    { .hs = 24.9,   .he = 33.2,  .rs = 255,  .re = 255, .gs = 20,  .ge = 255, .bs = 147, .be = 255, .ef = EF_OVER | EF_SCR_R },
+    { .hs = 33.2,   .he = 41.5,  .rs = 255,  .re = 255, .gs = 255, .ge = 255, .bs = 255, .be = 255, .ef = EF_OVER | EF_SCR_R },
+    { .hs = 41.5,   .he = 49.8,  .rs = 255,  .re = 255, .gs = 255, .ge = 255, .bs = 255, .be = 255, .ef = EF_OVER | EF_SCR_R },
+    { .hs = 49.8,   .he = 58.1,  .rs = 255,  .re = 255, .gs = 255, .ge = 255, .bs = 255, .be = 255, .ef = EF_OVER | EF_SCR_R },
+    { .hs = 58.1,   .he = 66.4,  .rs = 255,  .re = 255, .gs = 255, .ge = 255, .bs = 255, .be = 255, .ef = EF_OVER | EF_SCR_R },
+    { .hs = 66.4,   .he = 74.7,  .rs = 255,  .re = 255, .gs = 255, .ge = 255, .bs = 255, .be = 255, .ef = EF_OVER | EF_SCR_R },
+    { .hs = 74.7,   .he = 83,    .rs = 255,  .re = 0,   .gs = 255, .ge = 255, .bs = 255, .be = 255, .ef = EF_OVER | EF_SCR_R },
+    { .hs = 83,     .he = 91.3,  .rs = 0,    .re = 0,   .gs = 255, .ge = 255, .bs = 255, .be = 255, .ef = EF_OVER | EF_SCR_R },
+    { .hs = 91.3,   .he = 100,   .rs = 0,    .re = 255, .gs = 255, .ge = 255, .bs = 255, .be = 255, .ef = EF_OVER | EF_SCR_R },
+    { .end = 1 },
+};
+
+//C2077 colors
+led_setup_t leds_c2077[] = {
+    { .hs = 0,      .he = 25,     .rs = 211, .re = 211, .gs = 79,  .ge = 79,  .bs = 191, .be = 191, .ef = EF_OVER | EF_SCR_R },
+    { .hs = 25,     .he = 50,     .rs = 211, .re = 219, .gs = 79,  .ge = 48,  .bs = 191, .be = 65,  .ef = EF_OVER | EF_SCR_R },
+    { .hs = 50,     .he = 75,     .rs = 219, .re = 219, .gs = 48,  .ge = 48,  .bs = 65,  .be = 65,  .ef = EF_OVER | EF_SCR_R },
+    { .hs = 75,     .he = 100,    .rs = 219, .re = 211, .gs = 48,  .ge = 79,  .bs = 65,  .be = 191, .ef = EF_OVER | EF_SCR_R },
     { .end = 1 },
 };
 
@@ -161,24 +170,81 @@ led_setup_t leds_funkbutt[] = {   //I was raised in the hood
     { .end = 1 },
 };
 
+// greenish teal
+led_setup_t leds_teal1[] = {
+    { .hs = 0, .he = 100, .rs = 32, .re = 32, .gs = 255, .ge = 255, .bs = 80, .be = 80, .ef = EF_NONE },
+    { .end = 1 },
+};
+
+// more blueish teal
+led_setup_t leds_teal2[] = {
+    { .hs = 0, .he = 100, .rs = 47, .re = 47, .gs = 198, .ge = 198, .bs = 178, .be = 178, .ef = EF_NONE },
+    { .end = 1 },
+};
+
+//White with moving teal stripe
+led_setup_t leds_teal1_with_teal2_stripe[] = {
+    { .hs = 0, .he = 100, .rs = 47, .re = 47, .gs = 198, .ge = 198, .bs = 178, .be = 178, .ef = EF_NONE },
+    { .hs = 0, .he = 15, .rs = 0, .re = 5, .gs = 0, .ge = 37, .bs = 0, .be = 26, .ef = EF_SCR_R | EF_SUBTRACT },
+    { .hs = 15, .he = 30, .rs = 5, .re = 0, .gs = 37, .ge = 0, .bs = 26, .be = 0, .ef = EF_SCR_R | EF_SUBTRACT },
+    { .end = 1 },
+};
+
+//teal with moving white stripe
+led_setup_t leds_teal1_with_white_stripe[] = {
+    { .hs = 0, .he = 100, .rs = 32, .re = 32, .gs = 255, .ge = 255, .bs = 80, .be = 80, .ef = EF_NONE },
+    { .hs = 0, .he = 15, .rs = 32, .re = 255, .gs = 255, .ge = 255, .bs = 80, .be = 255, .ef = EF_SCR_R | EF_OVER },
+    { .hs = 15, .he = 30, .rs = 255, .re = 255, .gs = 255, .ge = 255, .bs = 255, .be = 255, .ef = EF_SCR_R | EF_OVER },
+    { .hs = 30, .he = 45, .rs = 255, .re = 32, .gs = 255, .ge = 255, .bs = 255, .be = 80, .ef = EF_SCR_R | EF_OVER },
+    { .end = 1 },
+};
+
+//White with moving teal stripe
+led_setup_t leds_white_with_teal1_stripe[] = {
+    { .hs = 0, .he = 100, .rs = 255, .re = 255, .gs = 255, .ge = 255, .bs = 255, .be = 255, .ef = EF_NONE },
+    { .hs = 0, .he = 15, .rs = 0, .re = 223, .gs = 0, .ge = 0, .bs = 0, .be = 175, .ef = EF_SCR_R | EF_SUBTRACT },
+    { .hs = 15, .he = 30, .rs = 223, .re = 0, .gs = 0, .ge = 0, .bs = 175, .be = 0, .ef = EF_SCR_R | EF_SUBTRACT },
+    { .end = 1 },
+};
+
+//Black with moving teal stripe
+led_setup_t leds_black_with_teal1_stripe[] = {
+    { .hs = 0, .he = 15, .rs = 0, .re = 32, .gs = 0, .ge = 255, .bs = 0, .be = 80, .ef = EF_SCR_R },
+    { .hs = 15, .he = 30, .rs = 32, .re = 0, .gs = 255, .ge = 0, .bs = 80, .be = 0, .ef = EF_SCR_R },
+    { .end = 1 },
+};
+
+led_setup_t leds_xmas_stripes[] = {
+    { .hs = 0,  .he = 30,  .rs = 255,  .re = 255,  .gs = 0, .ge = 0, .bs = 0, .be = 0, .ef = EF_NONE | EF_SCR_R },
+    { .hs = 30, .he = 50,  .rs = 255,  .re = 0, .gs = 0, .ge = 255, .bs = 0, .be = 0, .ef = EF_NONE | EF_SCR_R },
+    { .hs = 50, .he = 80,  .rs = 0, .re = 0, .gs = 255, .ge = 255, .bs = 0, .be = 0, .ef = EF_NONE | EF_SCR_R },
+    { .hs = 80, .he = 100, .rs = 0,  .re = 255, .gs = 255, .ge = 0, .bs = 0, .be = 0, .ef = EF_NONE | EF_SCR_R },
+    { .end = 1 },
+};
+
 void *led_setups[] = {
-    leds_pleasuretek_s,    //0
-    leds_cyan_pinkaf_s,    //1
-    leds_cyan_pinkaf_si,   //2
-    leds_blackandwhite,    //3
-    leds_rainbow_s,        //4
-    leds_rainbow_ns,       //5
-    leds_teal_salmon_s,    //6
-    leds_teal_salmon,      //7
-    leds_yellow,           //8
-    leds_red,              //9
-    leds_green,            //10
-    leds_blue,                   //11
-    leds_white,                  //12
-    leds_white_with_red_stripe,  //13
-    leds_black_with_red_stripe,  //14
-    leds_off,                    //15
-    leds_funkbutt                //16
+    leds_pleasuretek_s,           //0
+    leds_cyan_pinkaf_s,           //1
+    leds_cyan_pinkaf_si,          //2
+    leds_blackandwhite,           //3
+    leds_rainbow_s,               //4
+    leds_rainbow_ns,              //5
+//    leds_teal_salmon_s,
+//    leds_teal_salmon,
+    leds_red,                     //6
+    leds_green,                   //7
+    leds_teal1,                   //8
+    leds_teal2,                   //9
+    leds_blue,                    //10
+    leds_white,                   //11
+    leds_teal1_with_white_stripe, //12
+    leds_white_with_teal1_stripe, //13
+    leds_black_with_teal1_stripe, //14
+//    leds_white_with_red_stripe,
+    leds_black_with_red_stripe,   //15
+    leds_funkbutt,                //16
+    leds_xmas_stripes,            //17
+    leds_c2077,                //19
 };
 
 const uint8_t led_setups_count = sizeof(led_setups) / sizeof(led_setups[0]);
