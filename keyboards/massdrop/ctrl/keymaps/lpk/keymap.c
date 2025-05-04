@@ -313,7 +313,6 @@ led_instruction_t led_instructions_white_mains[] = {
 
 led_instruction_t led_instructions_color_accents[] = {
   { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB | LED_FLAG_USE_GLITTER, .layer = 0, .id0 = 536813086, .id1 = 1073250300, .id2 = 4286612479, .id3 = 8388607, .r = 47, .g = 198, .b = 178 }, // teal color for most keys, including ring
-  { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB | LED_FLAG_USE_GLITTER, .layer = 0, .id0 = 536813086, .id1 = 1073250300, .id2 = 4286612479, .id3 = 8388607, .r = 47, .g = 198, .b = 178 }, // teal color for most keys, including ring
   { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_ROTATE_PATTERN | LED_FLAG_USE_GLITTER, .layer = 1, .id0 = 0, .id1 = 0, .id2 = 4286578688, .id3 = 8388607 }, // ring lights are pattern + glitter when fn is pressed (#s 88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119)
   { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB, .layer = 1, .id0 = 1, .id1 = 1073741824, .id2 = 131072, .id3 = 0, .r = 255, .g = 255, .b = 255 }, // fn, esc, and enter are white when pressed
   { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_NULL, .layer = 1, .id0 = 1073733630, .id1 = 1069580256, .id2 = 915448, .id3 = 0 }, // other keys off when fn is pressed
