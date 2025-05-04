@@ -326,6 +326,7 @@ led_instruction_t led_instructions_gradient[] = {
   { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB | LED_FLAG_USE_GLITTER, .layer = 0, .id0 = 0, .id1 = 2147221504, .id2 = 0, .id3 = 4194320, .r = 176, .g = 210, .b = 203 }, // third row
   { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB | LED_FLAG_USE_GLITTER, .layer = 0, .id0 = 0, .id1 = 2147483648, .id2 = 4095, .id3 = 0, .r = 215, .g = 232, .b = 229 }, // second row
   { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB | LED_FLAG_USE_GLITTER, .layer = 0, .id0 = 0, .id1 = 0, .id2 = 4294963200, .id3 = 15, .r = 255, .g = 255, .b = 255 }, // first row
+  { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB, .layer = 1, .id0 = 3221233664, .id1 = 2151645215, .id2 = 7342087, .id3 = 0, .r = 45, .g = 143, .b = 129 }, // action keys are teal when fn is pressed (#s 14,31,32,33,34,35,36,37,48,49,50,51,52,53,54,64,65,66,67,76,85,86,87)
   { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_ROTATE_PATTERN | LED_FLAG_USE_GLITTER, .layer = 1, .id0 = 0, .id1 = 0, .id2 = 4286578688, .id3 = 8388607 }, // ring lights are pattern + glitter when fn is pressed (#s 88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119)
   { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB, .layer = 1, .id0 = 1, .id1 = 1073741824, .id2 = 131072, .id3 = 0, .r = 255, .g = 255, .b = 255 }, // fn, esc, and enter are white when pressed
   { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_NULL, .layer = 1, .id0 = 1073733630, .id1 = 1069580256, .id2 = 915448, .id3 = 0 }, // other keys off when fn is pressed
@@ -354,7 +355,7 @@ led_instruction_t led_instructions_default[] = {
 led_instruction_t led_instructions_c2077[] = {
   { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_PATTERN | LED_FLAG_USE_GLITTER, .layer = 0, .id0 = 536813086, .id1 = 1073250300, .id2 = 4286612479, .id3 = 8388607, .pattern_id = 18 }, // c2077alt for most keys
   { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB, .layer = 0, .id0 = 3758154209, .id1 = 3221716995, .id2 = 8354816, .id3 = 0, .r = 251,	.g = 245, .b = 23 }, // yellow color for accent keys (#s 1,6,7,8,9,14,15,16,30,31,32,33,34,48,49,50,51,63,64,75,76,77,78,79,81,82,83,84,85,86,87)
-  { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB, .layer = 1, .id0 = 3221233664, .id1 = 2151645215, .id2 = 7342087, .id3 = 0, .r = 251,	.g = 245, .b = 23 }, // action keys are teal when fn is pressed (#s 14,31,32,33,34,35,36,37,48,49,50,51,52,53,54,64,65,66,67,76,85,86,87)
+  { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB, .layer = 1, .id0 = 3221233664, .id1 = 2151645215, .id2 = 7342087, .id3 = 0, .r = 251,	.g = 245, .b = 23 }, // action keys are yellow when fn is pressed (#s 14,31,32,33,34,35,36,37,48,49,50,51,52,53,54,64,65,66,67,76,85,86,87)
   { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_PATTERN | LED_FLAG_USE_GLITTER, .layer = 1, .id0 = 0, .id1 = 0, .id2 = 4286578688, .id3 = 8388607, .pattern_id = 18 }, // ring lights still can glitter when fn is pressed (#s 88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119)
   { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_PATTERN, .layer = 1, .id0 = 1, .id1 = 1073741824, .id2 = 131072, .id3 = 0, .pattern_id = 18 }, // fn, esc, and enter are purple when pressed
   { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_NULL, .layer = 1, .id0 = 1073733630, .id1 = 1069580256, .id2 = 915448, .id3 = 0 }, // other keys off when fn is pressed
@@ -462,7 +463,7 @@ void *led_game_instruction_list[] = {
 
 const uint8_t led_instruction_count = sizeof(led_instruction_list) / sizeof(led_instruction_list[0]);
 
-uint8_t led_default_rotate_pattern[6] = {  // each instruction group in led_instruction_list can have a default rotate pattern to set on change
+uint8_t led_default_rotate_pattern[led_instruction_count] = {  // each instruction group in led_instruction_list can have a default rotate pattern to set on change
     0,
     0,
     0,
