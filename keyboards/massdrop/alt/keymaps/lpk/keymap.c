@@ -269,7 +269,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     }
 }
 
-// DONE
+
 led_instruction_t led_instructions_green_teal_and_purple[] = {
     { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB | LED_FLAG_USE_GLITTER, .layer = 0, .id0 = 2684297214, .id1 = 545252351, .id2 = 4294967288, .id3 = 511, .r = 32, .g = 255, .b = 80 }, // teal color for most keys, including ring
     { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB | LED_FLAG_USE_GLITTER, .layer = 0, .id0 = 1610670081, .id1 = 3749714944, .id2 = 7, .id3 = 0, .r = 192, .g = 32, .b = 255 }, // purple color for accent keys (#s 1, 15, 31, 43-45, 56-61, 63-67)
@@ -280,7 +280,7 @@ led_instruction_t led_instructions_green_teal_and_purple[] = {
     { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_NULL, .layer = 1, .id0 = 335028224, .id1 = 218039292, .id2 = 0, .id3 = 0 }, // other keys off when fn is pressed
     {.end = 1 }
 };
-// DONE
+
 led_instruction_t led_instructions_blue_teal_and_pink[] = {
 { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB | LED_FLAG_USE_GLITTER, .layer = 0, .id0 = 2684297214, .id1 = 545252351, .id2 = 4294967288, .id3 = 511, .r = 47, .g = 198, .b = 178 }, // teal color for most keys, including ring
 { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB | LED_FLAG_USE_GLITTER, .layer = 0, .id0 = 1610670081, .id1 = 3749714944, .id2 = 7, .id3 = 0, .r = 255, .g = 32, .b = 207 }, // pink color for accent keys (#s 1, 15, 31, 43-45, 56-61, 63-67)
@@ -292,7 +292,7 @@ led_instruction_t led_instructions_blue_teal_and_pink[] = {
 {.end = 1 }
 };
 
-// DONE
+
 led_instruction_t led_instructions_white_mains[] = {
 { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB, .layer = 0, .id0 = 2214526976, .id1 = 1040639, .id2 = 0, .id3 = 0, .r = 255, .g = 255, .b = 255 }, // white color for alpha keys (#s 17-26, 32-40, 46-52)
 { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_ROTATE_PATTERN | LED_FLAG_USE_GLITTER, .layer = 0, .id0 = 2080440319, .id1 = 4293926656, .id2 = 4294967295, .id3 = 511 }, // all pattern options for other keys & light ring
@@ -303,7 +303,7 @@ led_instruction_t led_instructions_white_mains[] = {
 { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_NULL, .layer = 1, .id0 = 335028224, .id1 = 218039292, .id2 = 0, .id3 = 0 }, // other keys off when fn is pressed
 {.end = 1 }
 };
-// DONE
+
 led_instruction_t led_instructions_gradient[] = {
 { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB | LED_FLAG_USE_GLITTER, .layer = 0, .id0 = 32767, .id1 = 0, .id2 = 4290772992, .id3 = 31, .r = 45, .g = 143, .b = 129 }, // top row
 { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB | LED_FLAG_USE_GLITTER, .layer = 0, .id0 = 1073709056, .id1 = 0, .id2 = 2097152, .id3 = 32, .r = 104, .g = 170, .b = 159 }, // fourth row 
@@ -317,7 +317,7 @@ led_instruction_t led_instructions_gradient[] = {
 { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_NULL, .layer = 1, .id0 = 335028224, .id1 = 218039292, .id2 = 0, .id3 = 0 }, // other keys off when fn is pressed
 {.end = 1 }
 };
-// DONE
+
 led_instruction_t led_instructions_default[] = {
 { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_ROTATE_PATTERN | LED_FLAG_USE_GLITTER, .layer = 0, .id0 = 4294967295, .id1 = 4294967295, .id2 = 4294967295, .id3 = 511 }, // all keys, use regular patterns but also with glitter effect togglable
 { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_ROTATE_PATTERN, .layer = 1, .id0 = 3221233664, .id1 = 2151645215, .id2 = 7342087, .id3 = 0 }, // action keys are pattern when fn is pressed (#s 16-19, 31-34, 45-48, 57, 65-67)
@@ -326,7 +326,7 @@ led_instruction_t led_instructions_default[] = {
 { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_NULL, .layer = 1, .id0 = 335028224, .id1 = 218039292, .id2 = 0, .id3 = 0 }, // other keys off when fn is pressed
 {.end = 1 }
 };
-// DONE
+
 led_instruction_t led_instructions_c2077[] = {
 { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_PATTERN | LED_FLAG_USE_GLITTER, .layer = 0, .id0 = 2684297214, .id1 = 545252351, .id2 = 4294967288, .id3 = 511, .pattern_id = 18 }, // c2077 for most keys
 { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB, .layer = 0, .id0 = 1610670081, .id1 = 3749714944, .id2 = 7, .id3 = 0, .r = 251,	.g = 245, .b = 23 }, // yellow color for accent keys (#s 1, 15, 31, 43-45, 56-61, 63-67)
@@ -337,7 +337,7 @@ led_instruction_t led_instructions_c2077[] = {
 { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_NULL, .layer = 1, .id0 = 335028224, .id1 = 218039292, .id2 = 0, .id3 = 0 }, // other keys off when fn is pressed
 {.end = 1 }
 };
-// DONE
+
 led_instruction_t led_instructions_white_teal[] = {
 { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB | LED_FLAG_USE_GLITTER, .layer = 0, .id0 = 1, .id1 = 2147484672, .id2 = 4294967288, .id3 = 511, .r = 32, .g = 255, .b = 80 }, // teal color for ring, esc, fn, enter
 { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB | LED_FLAG_USE_GLITTER, .layer = 0, .id0 = 1610661888, .id1 = 528488448, .id2 = 7, .id3 = 0, .r = 116, .g = 228, .b = 140 }, // dull teal color for accent keys (#s 15, 31, 44, 45, 56-61, 63, 65-67)
@@ -351,62 +351,50 @@ led_instruction_t led_instructions_white_teal[] = {
 };
 
 led_instruction_t led_game_instructions_green_teal_and_purple[] = {
-{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB,  .layer = 0, .id0 = 2049,         .id1 = 1077411848,  .id2 = 0,           .id3 = 0, .r = 192, .g = 32, .b = 255 }, // color for wasd, esc, enter, and f11 (#s 1, 12, 36, 52, 53, 54, 63)
-{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB,  .layer = 0, .id0 = 0,            .id1 = 0,           .id2 = 4286578688,  .id3 = 8388607, .r = 192, .g = 32, .b = 255 }, // color for ring
-{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB,  .layer = 0, .id0 = 4294965246,   .id1 = 3217555447,  .id2 = 8388607,     .id3 = 0, .r = 32, .g = 255, .b = 80 }, // everything else
-{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB,  .layer = 1, .id0 = 0,            .id1 = 1073741824,  .id2 = 131072,      .id3 = 0, .r = 192, .g = 32, .b = 255 }, // purple color for fn (82) and enter (63) when fn is pressed
-{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB,  .layer = 1, .id0 = 0,            .id1 = 0,           .id2 = 4286578688,  .id3 = 8388607, .r = 192, .g = 32, .b = 255 }, // ring can stay lit when fn is pressed
-{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_NULL,     .layer = 1, .id0 = 4294967295,   .id1 = 3221225471,  .id2 = 8257535,     .id3 = 0 }, // all other LEDs off when fn is pressed
+{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB,  .layer = 0, .id0 = 2147614721, .id1 = 1027, .id2 = 4294967288, .id3 = 511, .r = 192, .g = 32, .b = 255 }, // purple color for wasd, esc, enter, and ring (#s 1, 18, 32-34, 43, 68-105)
+{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB,  .layer = 0, .id0 = 2147352574, .id1 = 4294966268, .id2 = 7, .id3 = 0, .r = 32, .g = 255, .b = 80 }, // everything else is teal
+{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB,  .layer = 1, .id0 = 0, .id1 = 2147484672, .id2 = 4294967288, .id3 = 511, .r = 192, .g = 32, .b = 255 }, // purple color for fn (64), enter (43), and ring when fn is pressed
+{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_NULL,     .layer = 1, .id0 = 4294967295, .id1 = 2147482623, .id2 = 7, .id3 = 0 }, // all other LEDs off when fn is pressed
 {.end = 1 }
 };
 
 led_instruction_t led_game_instructions_blue_teal_and_pink[] = {
-{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB,  .layer = 0, .id0 = 2049,         .id1 = 1077411848,  .id2 = 0,           .id3 = 0, .r = 255, .g = 32, .b = 207 }, // color for wasd, esc, enter, and f11 (#s 1, 12, 36, 52, 53, 54, 63)
-{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB,  .layer = 0, .id0 = 0,            .id1 = 0,           .id2 = 4286578688,  .id3 = 8388607, .r = 255, .g = 32, .b = 207 }, // color for ring
-{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB,  .layer = 0, .id0 = 4294965246,   .id1 = 3217555447,  .id2 = 8388607,     .id3 = 0, .r = 47, .g = 198, .b = 178 }, // everything else
-{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB,  .layer = 1, .id0 = 0,            .id1 = 1073741824,  .id2 = 131072,      .id3 = 0, .r = 255, .g = 32, .b = 207 }, // pink color for fn (82) and enter (63) when fn is pressed
-{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB,  .layer = 1, .id0 = 0,            .id1 = 0,           .id2 = 4286578688,  .id3 = 8388607, .r = 255, .g = 32, .b = 207 }, // ring can stay lit when fn is pressed
-{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_NULL,     .layer = 1, .id0 = 4294967295,   .id1 = 3221225471,  .id2 = 8257535,     .id3 = 0 }, // all other LEDs off when fn is pressed
+{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB,  .layer = 0, .id0 = 2147614721, .id1 = 1027, .id2 = 4294967288, .id3 = 511, .r = 255, .g = 32, .b = 207 }, // pink color for wasd, esc, enter, and ring (#s 1, 18, 32-34, 43, 68-105)
+{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB,  .layer = 0, .id0 = 2147352574, .id1 = 4294966268, .id2 = 7, .id3 = 0, .r = 47, .g = 198, .b = 178 }, // everything else is blue teal
+{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB,  .layer = 1, .id0 = 0, .id1 = 2147484672, .id2 = 4294967288, .id3 = 511, .r = 255, .g = 32, .b = 207 }, // pink color for fn (64), enter (43), and ring when fn is pressed
+{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_NULL,     .layer = 1, .id0 = 4294967295, .id1 = 2147482623, .id2 = 7, .id3 = 0 }, // all other LEDs off when fn is pressed
 {.end = 1 }
 };
 
 led_instruction_t led_game_instructions_white_mains[] = {
-{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_ROTATE_PATTERN,  .layer = 0, .id0 = 2049,         .id1 = 1077411848,  .id2 = 0,           .id3 = 0 }, // color for wasd, esc, enter, and f11 (#s 1, 12, 36, 52, 53, 54, 63)
-{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_ROTATE_PATTERN,  .layer = 0, .id0 = 0,            .id1 = 0,           .id2 = 4286578688,  .id3 = 8388607 }, // color for ring
-{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB,  .layer = 0, .id0 = 4294965246,   .id1 = 3217555447,  .id2 = 8388607,     .id3 = 0, .r = 255, .g = 255, .b = 255 }, // everything else
-{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_ROTATE_PATTERN,  .layer = 1, .id0 = 0,            .id1 = 1073741824,  .id2 = 131072,      .id3 = 0 }, // rotating color for fn (82) and enter (63) when fn is pressed
-{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_ROTATE_PATTERN,  .layer = 1, .id0 = 0,            .id1 = 0,           .id2 = 4286578688,  .id3 = 8388607 }, // ring can stay lit when fn is pressed
-{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_NULL,     .layer = 1, .id0 = 4294967295,   .id1 = 3221225471,  .id2 = 8257535,     .id3 = 0 }, // all other LEDs off when fn is pressed
+{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_ROTATE_PATTERN,  .layer = 0, .id0 = 2147614721, .id1 = 1027, .id2 = 4294967288, .id3 = 511 }, // rotate pattern for wasd, esc, enter, and ring (#s 1, 18, 32-34, 43, 68-105)
+{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB,  .layer = 0, .id0 = 2147352574, .id1 = 4294966268, .id2 = 7, .id3 = 0, .r = 255, .g = 255, .b = 255 }, // everything else is white
+{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_ROTATE_PATTERN,  .layer = 1, .id0 = 0, .id1 = 2147484672, .id2 = 4294967288, .id3 = 511 }, // rotating color for fn (64), enter (43), and ring when fn is pressed
+{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_NULL,     .layer = 1, .id0 = 4294967295, .id1 = 2147482623, .id2 = 7, .id3 = 0 }, // all other LEDs off when fn is pressed
 {.end = 1 }
 };
 
 led_instruction_t led_game_instructions_white_and_red[] = {
-{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB,  .layer = 0, .id0 = 2049,         .id1 = 1077411848,  .id2 = 0,           .id3 = 0, .r = 255, .g = 0, .b = 0 }, // color for wasd, esc, enter, and f11 (#s 1, 12, 36, 52, 53, 54, 63)
-{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB,  .layer = 0, .id0 = 0,            .id1 = 0,           .id2 = 4286578688,  .id3 = 8388607, .r = 255, .g = 0, .b = 0 }, // color for ring
-{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB,  .layer = 0, .id0 = 4294965246,   .id1 = 3217555447,  .id2 = 8388607,     .id3 = 0, .r = 255, .g = 255, .b = 255 }, // everything else
-{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB,  .layer = 1, .id0 = 0,            .id1 = 1073741824,  .id2 = 131072,      .id3 = 0, .r = 255, .g = 0, .b = 0 }, // red color for fn (82) and enter (63) when fn is pressed
-{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB,  .layer = 1, .id0 = 0,            .id1 = 0,           .id2 = 4286578688,  .id3 = 8388607, .r = 255, .g = 0, .b = 0 }, // ring can stay lit when fn is pressed
-{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_NULL,     .layer = 1, .id0 = 4294967295,   .id1 = 3221225471,  .id2 = 8257535,     .id3 = 0 }, // all other LEDs off when fn is pressed
+{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB,  .layer = 0, .id0 = 2147614721, .id1 = 1027, .id2 = 4294967288, .id3 = 511, .r = 255, .g = 0, .b = 0 }, // red color for wasd, esc, enter, and ring (#s 1, 18, 32-34, 43, 68-105)
+{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB,  .layer = 0, .id0 = 2147352574, .id1 = 4294966268, .id2 = 7, .id3 = 0, .r = 255, .g = 255, .b = 255 }, // everything else is white
+{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB,  .layer = 1, .id0 = 0, .id1 = 2147484672, .id2 = 4294967288, .id3 = 511, .r = 255, .g = 0, .b = 0 }, // red color for fn (64), enter (43), and ring when fn is pressed
+{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_NULL,     .layer = 1, .id0 = 4294967295, .id1 = 2147482623, .id2 = 7, .id3 = 0 }, // all other LEDs off when fn is pressed
 {.end = 1 }
 };
 
 led_instruction_t led_game_instructions_white_teal[] = {
-{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB,  .layer = 0, .id0 = 2049,         .id1 = 1077411848,  .id2 = 0,           .id3 = 0, .r = 32, .g = 255, .b = 80 }, // color for wasd, esc, enter, and f11 (#s 1, 12, 36, 52, 53, 54, 63)
-{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB,  .layer = 0, .id0 = 0,            .id1 = 0,           .id2 = 4286578688,  .id3 = 8388607, .r = 32, .g = 255, .b = 80 }, // color for ring
-{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB,  .layer = 0, .id0 = 4294965246,   .id1 = 3217555447,  .id2 = 8388607,     .id3 = 0, .r = 116, .g = 228, .b = 140 }, // everything else
-{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB,  .layer = 1, .id0 = 0,            .id1 = 1073741824,  .id2 = 131072,      .id3 = 0, .r = 32, .g = 255, .b = 80 }, // teal color for fn (82) and enter (63) when fn is pressed
-{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB,  .layer = 1, .id0 = 0,            .id1 = 0,           .id2 = 4286578688,  .id3 = 8388607, .r = 32, .g = 255, .b = 80 }, // ring can stay lit when fn is pressed
-{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_NULL,     .layer = 1, .id0 = 4294967295,   .id1 = 3221225471,  .id2 = 8257535,     .id3 = 0 }, // all other LEDs off when fn is pressed
+{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB,  .layer = 0, .id0 = 2147614721, .id1 = 1027, .id2 = 4294967288, .id3 = 511, .r = 32, .g = 255, .b = 80 }, // teal color for wasd, esc, enter, and ring (#s 1, 18, 32-34, 43, 68-105)
+{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB,  .layer = 0, .id0 = 2147352574, .id1 = 4294966268, .id2 = 7, .id3 = 0, .r = 116, .g = 228, .b = 140 }, // everything else is light teal
+{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB,  .layer = 1, .id0 = 0, .id1 = 2147484672, .id2 = 4294967288, .id3 = 511, .r = 32, .g = 255, .b = 80 }, // teal color for fn (64), enter (43), and ring when fn is pressed
+{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_NULL,     .layer = 1, .id0 = 4294967295, .id1 = 2147482623, .id2 = 7, .id3 = 0 }, // all other LEDs off when fn is pressed
 {.end = 1 }
 };
 
 led_instruction_t led_game_instructions_c2077[] = {
-{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB,  .layer = 0, .id0 = 2049,         .id1 = 1077411848,  .id2 = 0,           .id3 = 0, .r = 251,	.g = 245, .b = 23 }, // yellow color for wasd, esc, enter, and f11 (#s 1, 12, 36, 52, 53, 54, 63)
-{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB,  .layer = 0, .id0 = 0,            .id1 = 0,           .id2 = 4286578688,  .id3 = 8388607, .r = 251,	.g = 245, .b = 23 }, // yellow color for ring
-{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_PATTERN,  .layer = 0, .id0 = 4294965246,   .id1 = 3217555447,  .id2 = 8388607,     .id3 = 0, .pattern_id = 18 }, // everything else
-{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB,  .layer = 1, .id0 = 0,            .id1 = 1073741824,  .id2 = 131072,      .id3 = 0, .r = 251,	.g = 245, .b = 23 }, // yellow color for fn (82) and enter (63) when fn is pressed
-{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB,  .layer = 1, .id0 = 0,            .id1 = 0,           .id2 = 4286578688,  .id3 = 8388607, .r = 251,	.g = 245, .b = 23 }, // ring can stay lit when fn is pressed
-{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_NULL,     .layer = 1, .id0 = 4294967295,   .id1 = 3221225471,  .id2 = 8257535,     .id3 = 0 }, // all other LEDs off when fn is pressed
+{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB,  .layer = 0, .id0 = 2147614721, .id1 = 1027, .id2 = 4294967288, .id3 = 511, .r = 251,	.g = 245, .b = 23 }, // yellow color for wasd, esc, enter, and f11 (#s 1, 12, 36, 52, 53, 54, 63)
+{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_PATTERN,  .layer = 0, .id0 = 2147352574, .id1 = 4294966268, .id2 = 7, .id3 = 0, .pattern_id = 18 }, // everything else is c2077 pattern
+{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB,  .layer = 1, .id0 = 0, .id1 = 2147484672, .id2 = 4294967288, .id3 = 511, .r = 251,	.g = 245, .b = 23 }, // yellow color for fn (64), enter (43), and ring when fn is pressed
+{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_NULL,     .layer = 1, .id0 = 4294967295, .id1 = 2147482623, .id2 = 7, .id3 = 0 }, // all other LEDs off when fn is pressed
 {.end = 1 }
 };
 
