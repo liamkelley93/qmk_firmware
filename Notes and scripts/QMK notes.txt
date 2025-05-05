@@ -2,13 +2,13 @@ Notes for compiling and installing the firmware
 
 Compiling:
 1. Navigate to ~/Documents/QMK/pleasuretek
-2. Run "make massdrop/ctrl:minimac93"
-3. Output will be ~/Documents/QMK/pleasuretek/massdrop_ctrl_minimac93.bin
+2. Run "make massdrop/ctrl:lpk"
+3. Output will be ~/Documents/QMK/pleasuretek/massdrop_ctrl_lpk.bin
 
 Executable code
 cd ~/Documents/QMK/pleasuretek
-make massdrop/ctrl:minimac93
-cp massdrop_ctrl_minimac93.bin ~/Library/CloudStorage/Dropbox-Personal/Stuff/massdrop_ctrl_minimac93.bin
+make massdrop/ctrl:lpk
+cp massdrop_ctrl_lpk.bin ~/Library/CloudStorage/Dropbox-Personal/Stuff/massdrop_ctrl_lpk.bin
 
 Installing:
 1. Copy .bin file to Downloads folder on Hephaestus
