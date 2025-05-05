@@ -244,7 +244,7 @@ void *led_setups[] = {
     leds_black_with_red_stripe,   //15
     leds_funkbutt,                //16
     leds_xmas_stripes,            //17
-    leds_c2077,                //19
+    leds_c2077,                   //18
 };
 
 const uint8_t led_setups_count = sizeof(led_setups) / sizeof(led_setups[0]);
