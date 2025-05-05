@@ -48,7 +48,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
     [1] = LAYOUT(
         KC_GRV,   KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,  KC_TRNS, KC_MUTE, \
-        L_T_BR,   L_PSI,   L_BRI,   L_SC_N,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_BRMD, KC_BRMU, KC_TRNS, KC_PAUS, \
+        L_T_BR,   L_PSI,   L_BRI,   L_SC_N,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_SLCK, KC_PAUS, KC_TRNS, KC_PAUS, \
         L_T_GLIT, L_PSD,   L_BRD,   L_SC_P,  KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,          L_T_GCM, KC_VOLU, \
         L_GLITSM, L_GLITD, L_T_ONF, L_T_PTD, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS, KC_TRNS,          L_I_P,   KC_VOLD, \
         KC_TRNS,  KC_TRNS, KC_MPRV,                            KC_MPLY,                            KC_MNXT, KC_TRNS, L_PTP,   L_I_N,   L_PTN  \
@@ -273,7 +273,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 led_instruction_t led_instructions_green_teal_and_purple[] = {
     { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB | LED_FLAG_USE_GLITTER, .layer = 0, .id0 = 2684297214, .id1 = 545252351, .id2 = 4294967288, .id3 = 511, .r = 32, .g = 255, .b = 80 }, // teal color for most keys, including ring
     { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB | LED_FLAG_USE_GLITTER, .layer = 0, .id0 = 1610670081, .id1 = 3749714944, .id2 = 7, .id3 = 0, .r = 192, .g = 32, .b = 255 }, // purple color for accent keys (#s 1, 15, 31, 43-45, 56-61, 63-67)
-    { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB, .layer = 1, .id0 = 3221233664, .id1 = 2151645215, .id2 = 7342087, .id3 = 0, .r = 32, .g = 255, .b = 80 }, // action keys are teal when fn is pressed (#s 16-19, 31-34, 45-48, 57, 65-67)
+    { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB, .layer = 1, .id0 = 3221716992, .id1 = 16838659, .id2 = 7, .id3 = 0, .r = 32, .g = 255, .b = 80 }, // action keys are teal when fn is pressed (#s 16-19, 31-34, 45-48, 57, 65-67)
     { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB, .layer = 1, .id0 = 738222079, .id1 = 1912604672, .id2 = 0, .id3 = 0, .r = 116, .g = 228, .b = 140 }, // non-custom action keys (i.e. mute, volume up, F10, etc.) are dull teal when fn is pressed (#s 1-13, 15, 27, 28, 30, 44, 58, 61-63)
     { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB | LED_FLAG_USE_GLITTER, .layer = 1, .id0 = 0, .id1 = 0, .id2 = 4294967288, .id3 = 511, .r = 32, .g = 255, .b = 80 }, // ring lights still can glitter when fn is pressed (#s 68-105)
     { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB, .layer = 1, .id0 = 0, .id1 = 2147484672, .id2 = 0, .id3 = 0, .r = 192, .g = 32, .b = 255 }, // fn and enter are purple when pressed
@@ -284,7 +284,7 @@ led_instruction_t led_instructions_green_teal_and_purple[] = {
 led_instruction_t led_instructions_blue_teal_and_pink[] = {
 { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB | LED_FLAG_USE_GLITTER, .layer = 0, .id0 = 2684297214, .id1 = 545252351, .id2 = 4294967288, .id3 = 511, .r = 47, .g = 198, .b = 178 }, // teal color for most keys, including ring
 { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB | LED_FLAG_USE_GLITTER, .layer = 0, .id0 = 1610670081, .id1 = 3749714944, .id2 = 7, .id3 = 0, .r = 255, .g = 32, .b = 207 }, // pink color for accent keys (#s 1, 15, 31, 43-45, 56-61, 63-67)
-{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB, .layer = 1, .id0 = 3221233664, .id1 = 2151645215, .id2 = 7342087, .id3 = 0, .r = 47, .g = 198, .b = 178 }, // action keys are teal when fn is pressed (#s 16-19, 31-34, 45-48, 57, 65-67)
+{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB, .layer = 1, .id0 = 3221716992, .id1 = 16838659, .id2 = 7, .id3 = 0, .r = 47, .g = 198, .b = 178 }, // action keys are teal when fn is pressed (#s 16-19, 31-34, 45-48, 57, 65-67)
 { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB, .layer = 1, .id0 = 738222079, .id1 = 1912604672, .id2 = 0, .id3 = 0, .r = 116, .g = 227, .b = 212 }, // non-custom action keys (i.e. mute, volume up, F10, etc.) are dull teal when fn is pressed (#s 1-13, 15, 27, 28, 30, 44, 58, 61-63)
 { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB | LED_FLAG_USE_GLITTER, .layer = 1, .id0 = 0, .id1 = 0, .id2 = 4294967288, .id3 = 511, .r = 47, .g = 198, .b = 178 }, // ring lights still can glitter when fn is pressed (#s 68-105)
 { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB, .layer = 1, .id0 = 0, .id1 = 2147484672, .id2 = 0, .id3 = 0, .r = 255, .g = 32, .b = 207 }, // fn and enter are pink when pressed
@@ -296,7 +296,7 @@ led_instruction_t led_instructions_blue_teal_and_pink[] = {
 led_instruction_t led_instructions_white_mains[] = {
 { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB, .layer = 0, .id0 = 2214526976, .id1 = 1040639, .id2 = 0, .id3 = 0, .r = 255, .g = 255, .b = 255 }, // white color for alpha keys (#s 17-26, 32-40, 46-52)
 { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_ROTATE_PATTERN | LED_FLAG_USE_GLITTER, .layer = 0, .id0 = 2080440319, .id1 = 4293926656, .id2 = 4294967295, .id3 = 511 }, // all pattern options for other keys & light ring
-{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_ROTATE_PATTERN, .layer = 1, .id0 = 3221233664, .id1 = 2151645215, .id2 = 7342087, .id3 = 0 }, // action keys are pattern when fn is pressed (#s 16-19, 31-34, 45-48, 57, 65-67)
+{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_ROTATE_PATTERN, .layer = 1, .id0 = 3221716992, .id1 = 16838659, .id2 = 7, .id3 = 0 }, // action keys are pattern when fn is pressed (#s 16-19, 31-34, 45-48, 57, 65-67)
 { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB, .layer = 1, .id0 = 738222079, .id1 = 1912604672, .id2 = 0, .id3 = 0, .r = 128, .g = 128, .b = 128 }, // non-custom action keys (i.e. mute, volume up, F10, etc.) are off-white when fn is pressed (#s 1-13, 15, 27, 28, 30, 44, 58, 61-63)
 { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_ROTATE_PATTERN | LED_FLAG_USE_GLITTER, .layer = 1, .id0 = 0, .id1 = 0, .id2 = 4294967288, .id3 = 511 }, // ring lights are pattern + glitter when fn is pressed (#s 68-105)
 { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB, .layer = 1, .id0 = 0, .id1 = 2147484672, .id2 = 0, .id3 = 0, .r = 255, .g = 255, .b = 255 }, // fn and enter are white when pressed
@@ -310,7 +310,7 @@ led_instruction_t led_instructions_gradient[] = {
 { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB | LED_FLAG_USE_GLITTER, .layer = 0, .id0 = 3221225472, .id1 = 4095, .id2 = 1048576, .id3 = 64, .r = 155, .g = 198, .b = 189 }, // third row
 { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB | LED_FLAG_USE_GLITTER, .layer = 0, .id0 = 0, .id1 = 67104768, .id2 = 524288, .id3 = 128, .r = 205, .g = 226, .b = 222 }, // second row
 { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB | LED_FLAG_USE_GLITTER, .layer = 0, .id0 = 0, .id1 = 4227858432, .id2 = 524287, .id3 = 256, .r = 255, .g = 255, .b = 255 }, // first row
-{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB, .layer = 1, .id0 = 3221233664, .id1 = 2151645215, .id2 = 7342087, .id3 = 0, .r = 45, .g = 143, .b = 129 }, // action keys are teal when fn is pressed (#s 16-19, 31-34, 45-48, 57, 65-67)
+{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB, .layer = 1, .id0 = 3221716992, .id1 = 16838659, .id2 = 7, .id3 = 0, .r = 45, .g = 143, .b = 129 }, // action keys are teal when fn is pressed (#s 16-19, 31-34, 45-48, 57, 65-67)
 { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB, .layer = 1, .id0 = 738222079, .id1 = 1912604672, .id2 = 0, .id3 = 0, .r = 155, .g = 198, .b = 189 }, // non-custom action keys (i.e. mute, volume up, F10, etc.) are dull teal when fn is pressed (#s 1-13, 15, 27, 28, 30, 44, 58, 61-63)
 { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB | LED_FLAG_USE_GLITTER, .layer = 1, .id0 = 0, .id1 = 0, .id2 = 4294967288, .id3 = 511, .r = 45, .g = 143, .b = 129 }, // ring lights still can glitter when fn is pressed (#s 68-105)
 { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB, .layer = 1, .id0 = 0, .id1 = 2147484672, .id2 = 0, .id3 = 0, .r = 255, .g = 255, .b = 255 }, // fn and enter are white when pressed
@@ -320,7 +320,7 @@ led_instruction_t led_instructions_gradient[] = {
 
 led_instruction_t led_instructions_default[] = {
 { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_ROTATE_PATTERN | LED_FLAG_USE_GLITTER, .layer = 0, .id0 = 4294967295, .id1 = 4294967295, .id2 = 4294967295, .id3 = 511 }, // all keys, use regular patterns but also with glitter effect togglable
-{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_ROTATE_PATTERN, .layer = 1, .id0 = 3221233664, .id1 = 2151645215, .id2 = 7342087, .id3 = 0 }, // action keys are pattern when fn is pressed (#s 16-19, 31-34, 45-48, 57, 65-67)
+{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_ROTATE_PATTERN, .layer = 1, .id0 = 3221716992, .id1 = 16838659, .id2 = 7, .id3 = 0 }, // action keys are pattern when fn is pressed (#s 16-19, 31-34, 45-48, 57, 65-67)
 { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_ROTATE_PATTERN | LED_FLAG_USE_GLITTER, .layer = 1, .id0 = 0, .id1 = 0, .id2 = 4294967288, .id3 = 511 }, // ring lights are pattern + glitter when fn is pressed (#s 68-105)
 { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB, .layer = 1, .id0 = 0, .id1 = 2147484672, .id2 = 0, .id3 = 0, .r = 255, .g = 255, .b = 255 }, // fn and enter are white when pressed
 { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_NULL, .layer = 1, .id0 = 335028224, .id1 = 218039292, .id2 = 0, .id3 = 0 }, // other keys off when fn is pressed
@@ -330,7 +330,7 @@ led_instruction_t led_instructions_default[] = {
 led_instruction_t led_instructions_c2077[] = {
 { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_PATTERN | LED_FLAG_USE_GLITTER, .layer = 0, .id0 = 2684297214, .id1 = 545252351, .id2 = 4294967288, .id3 = 511, .pattern_id = 18 }, // c2077 for most keys
 { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB, .layer = 0, .id0 = 1610670081, .id1 = 3749714944, .id2 = 7, .id3 = 0, .r = 251,	.g = 245, .b = 23 }, // yellow color for accent keys (#s 1, 15, 31, 43-45, 56-61, 63-67)
-{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB, .layer = 1, .id0 = 3221233664, .id1 = 2151645215, .id2 = 7342087, .id3 = 0, .r = 251, .g = 245, .b = 23 }, // action keys are yellow when fn is pressed (#s 16-19, 31-34, 45-48, 57, 65-67)
+{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB, .layer = 1, .id0 = 3221716992, .id1 = 16838659, .id2 = 7, .id3 = 0, .r = 251, .g = 245, .b = 23 }, // action keys are yellow when fn is pressed (#s 16-19, 31-34, 45-48, 57, 65-67)
 { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB, .layer = 1, .id0 = 738222079, .id1 = 1912604672, .id2 = 0, .id3 = 0, .r = 199, .g = 197, .b = 155 }, // non-custom action keys (i.e. mute, volume up, F10, etc.) are dull yellow when fn is pressed (#s 1-13, 15, 27, 28, 30, 44, 58, 61-63)
 { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_PATTERN | LED_FLAG_USE_GLITTER, .layer = 1, .id0 = 0, .id1 = 0, .id2 = 4294967288, .id3 = 511, .pattern_id = 18 }, // ring lights still can glitter when fn is pressed (#s 68-105)
 { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_PATTERN, .layer = 1, .id0 = 0, .id1 = 2147484672, .id2 = 0, .id3 = 0, .pattern_id = 18 }, // fn and enter are purple when pressed
@@ -342,7 +342,7 @@ led_instruction_t led_instructions_white_teal[] = {
 { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB | LED_FLAG_USE_GLITTER, .layer = 0, .id0 = 1, .id1 = 2147484672, .id2 = 4294967288, .id3 = 511, .r = 32, .g = 255, .b = 80 }, // teal color for ring, esc, fn, enter
 { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB | LED_FLAG_USE_GLITTER, .layer = 0, .id0 = 1610661888, .id1 = 528488448, .id2 = 7, .id3 = 0, .r = 116, .g = 228, .b = 140 }, // dull teal color for accent keys (#s 15, 31, 44, 45, 56-61, 63, 65-67)
 { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB | LED_FLAG_USE_GLITTER, .layer = 0, .id0 = 2684305406, .id1 = 1618994175, .id2 = 0, .id3 = 0, .id3 = 0, .r = 200, .g = 200, .b = 200 }, // white color for other keys
-{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB, .layer = 1, .id0 = 3221233664, .id1 = 2151645215, .id2 = 7342087, .id3 = 0, .r = 32, .g = 255, .b = 80 }, // action keys are teal when fn is pressed (#s 16-19, 31-34, 45-48, 57, 65-67)
+{ .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB, .layer = 1, .id0 = 3221716992, .id1 = 16838659, .id2 = 7, .id3 = 0, .r = 32, .g = 255, .b = 80 }, // action keys are teal when fn is pressed (#s 16-19, 31-34, 45-48, 57, 65-67)
 { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB, .layer = 1, .id0 = 738222079, .id1 = 1912604672, .id2 = 0, .id3 = 0, .r = 116, .g = 228, .b = 140 }, // non-custom action keys (i.e. mute, volume up, F10, etc.) are dull teal when fn is pressed (#s 1-13, 15, 27, 28, 30, 44, 58, 61-63)
 { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB | LED_FLAG_USE_GLITTER, .layer = 1, .id0 = 0, .id1 = 0, .id2 = 4294967288, .id3 = 511, .r = 32, .g = 255, .b = 80 }, // ring lights still can glitter when fn is pressed (#s 68-105)
 { .flags = LED_FLAG_MATCH_LAYER | LED_FLAG_MATCH_ID | LED_FLAG_USE_RGB, .layer = 1, .id0 = 0, .id1 = 2147484672, .id2 = 0, .id3 = 0, .r = 32, .g = 255, .b = 80 }, // fn and enter are teal when pressed
@@ -420,7 +420,7 @@ void *led_game_instruction_list[] = {
 
 const uint8_t led_instruction_count = sizeof(led_instruction_list) / sizeof(led_instruction_list[0]);
 
-uint8_t led_default_rotate_pattern[led_instruction_count] = {  // each instruction group in led_instruction_list can have a default rotate pattern to set on change
+uint8_t led_default_rotate_pattern[7] = {  // each instruction group in led_instruction_list can have a default rotate pattern to set on change
     0,
     0,
     0,
