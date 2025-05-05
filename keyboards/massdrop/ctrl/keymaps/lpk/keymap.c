@@ -463,7 +463,7 @@ void *led_game_instruction_list[] = {
 
 const uint8_t led_instruction_count = sizeof(led_instruction_list) / sizeof(led_instruction_list[0]);
 
-uint8_t led_default_rotate_pattern[led_instruction_count] = {  // each instruction group in led_instruction_list can have a default rotate pattern to set on change
+uint8_t led_default_rotate_pattern[6] = {  // each instruction group in led_instruction_list can have a default rotate pattern to set on change
     0,
     0,
     0,
