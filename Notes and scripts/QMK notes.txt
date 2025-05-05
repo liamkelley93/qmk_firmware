@@ -1,19 +1,24 @@
 Notes for compiling and installing the firmware
 
 Compiling:
-1. Navigate to ~/Documents/QMK/pleasuretek
-2. Run "make massdrop/ctrl:lpk"
-3. Output will be ~/Documents/QMK/pleasuretek/massdrop_ctrl_lpk.bin
+1. Navigate to ~/Documents/GitHub/qmk_firmware
+2. Run "make massdrop/xxx:lpk"
+3. Output will be ~/Documents/GitHub/qmk_firmware/massdrop_xxx_lpk.bin
 
-Executable code
-cd ~/Documents/QMK/pleasuretek
+Executable code for Ctrl
+cd ~/Documents/GitHub/qmk_firmware
 make massdrop/ctrl:lpk
 cp massdrop_ctrl_lpk.bin ~/Library/CloudStorage/Dropbox-Personal/Stuff/massdrop_ctrl_lpk.bin
+
+Executable code for Alt
+cd ~/Documents/GitHub/qmk_firmware
+make massdrop/alt:lpk
+cp massdrop_alt_lpk.bin ~/Library/CloudStorage/Dropbox-Personal/Stuff/massdrop_alt_lpk.bin
 
 Installing:
 1. Copy .bin file to Downloads folder on Hephaestus
 2. Open cmd, navigate to Downloads
 3. Open on screen keyboard
-4. Leave "mdloader_windows.exe --first --download FILE_NAME --restart" ready to run in cmd
+4. Leave "mdloader --first --download FILE_NAME --restart" ready to run in cmd
 4. Press reset button on keyboard using paper clip
 5. Run command by pressing enter using on screen keyboard
