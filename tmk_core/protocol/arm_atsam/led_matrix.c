@@ -629,7 +629,7 @@ uint8_t led_matrix_init(void)
     led_animation_direction = 0;
     led_animation_orientation = LED_SCROLL_CENT2;  //setup default animation orientation (defined in header file)
     led_animation_breathing = 0;                  //turn breathing off by default
-    led_animation_glittering = 1;                 //turn glitter on by default
+    led_animation_glittering = 0;                 //turn glitter off by default
     breathe_step = 1;
     breathe_dir = 1;
     glitter_smooth = 1;    //glitter vibes = 0 and cloud vibes = 1
