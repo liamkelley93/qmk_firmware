@@ -5,20 +5,27 @@ Compiling:
 2. Run "make massdrop/xxx:lpk"
 3. Output will be ~/Documents/GitHub/qmk_firmware/massdrop_xxx_lpk.bin
 
-Executable code for Ctrl
+Commands are available in this same folder that do this automatically
+
+Executable code for Ctrl:
 cd ~/Documents/GitHub/qmk_firmware
 make massdrop/ctrl:lpk
-cp massdrop_ctrl_lpk.bin ~/Library/CloudStorage/Dropbox-Personal/Stuff/massdrop_ctrl_lpk.bin
 
-Executable code for Alt
+Executable code for Alt:
 cd ~/Documents/GitHub/qmk_firmware
 make massdrop/alt:lpk
-cp massdrop_alt_lpk.bin ~/Library/CloudStorage/Dropbox-Personal/Stuff/massdrop_alt_lpk.bin
 
-Installing:
+Installing on PC:
 1. Copy .bin file to Downloads folder on Hephaestus
 2. Open cmd, navigate to Downloads
 3. Open on screen keyboard
 4. Leave "mdloader --first --download FILE_NAME --restart" ready to run in cmd
 4. Press reset button on keyboard using paper clip
 5. Run command by pressing enter using on screen keyboard
+
+Installing on Mac:
+1. Open terminal, cd ~/Documents/GitHub/qmk_firmware
+2. Press reset button on keyboard using paper clip
+3. Run ./mdloader --first --download FILE_NAME --restart using built-in keyboard, wait for restart
+
+Alternatively, run the flash_alt.command file to make this easy, no second keyboard needed!
